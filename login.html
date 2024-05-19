@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="login.js" defer></script>
+<title>Login</title>
+</head>
+<body>
+    <div class="topnav">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Love_Live%21_Logo.png" alt="Love Live! Logo">
+          </div>
+        <div class="topnav-right">
+            <a href="home.html">Home</a>
+            <a href="test.html">About</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            
+        </div>
+    </div>
+
+<div class="login-container">
+  <h2>Log In</h2>
+  <form id="login-form" action="/submit_login" method="post">
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <input type="submit" value="Log In">
+  </form>
+  <p id="message"></p> <!-- Added paragraph for displaying messages -->
+</div>
+
+</body>
+</html>

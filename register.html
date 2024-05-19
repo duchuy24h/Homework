@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="register.js" defer></script>
+<title>Register</title>
+</head>
+<body>
+    <div class="topnav">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Love_Live%21_Logo.png" alt="Love Live! Logo">
+          </div>
+        <div class="topnav-right">
+            <a href="home.html">Home</a>
+            <a href="test.html">About</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            
+        </div>
+    </div>
+<div class="register-container">
+  <h2>Register</h2>
+  <form id="register-form" action="/submit_register" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="confirm-password" name="confirm-password" required>
+    
+    <input type="submit" value="Register">
+  </form>
+  <p id="message"></p> <!-- Added paragraph for displaying messages -->
+</div>
+
+</body>
+</html>
